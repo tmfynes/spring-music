@@ -4,6 +4,7 @@ plugins {
     id 'java'
     id 'eclipse-wtp'
     id 'idea'
+    id 'com.gorylenko.gradle-git-properties' version '2.5.0'
 }
 
 group = 'org.cloudfoundry.samples.music'

@@ -1,10 +1,13 @@
----
 applications:
-- name: spring-music
-  memory: 1G
-  random-route: true
-  path: build/libs/spring-music-1.0.jar
-  env:
-    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
-    SPRING_PROFILES_ACTIVE: http2
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ } }'
+  - name: spring-music
+    memory: 1G
+    instances: 1
+    buildpacks:
+      - java_buildpack_offline
+    path: build/libs/spring-music-0.0.1-SNAPSHOT.jar
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{jre: {version: 21.+}}'
+      SPRING_PROFILES_ACTIVE: default
+      JBP_CONFIG_SPRING_BOOT_EFFICIENCY: '{ "aot_enabled": true, "cds_enabled": true }'
+    health-check-type: port
+    disk-quota: 1G
