@@ -9,5 +9,6 @@ applications:
       JBP_CONFIG_OPEN_JDK_JRE: '{jre: {version: 21.+}}'
       SPRING_PROFILES_ACTIVE: default
       JBP_CONFIG_SPRING_BOOT_EFFICIENCY: '{ "aot_enabled": true, "cds_enabled": true }'
+      management.endpoints.web.exposure.include: "*"
     health-check-type: port
     disk-quota: 1G

@@ -39,6 +39,7 @@ dependencies {
     implementation platform("com.vmware.tanzu.spring:tanzu-spring-sdk-dependencies:1.0.1")
     // Spring Boot
     implementation "com.vmware.tanzu.spring:tanzu-spring-starter"
+    implementation "com.vmware.tanzu.spring.governance:governance-starter:2.0.0"
     implementation "org.springframework.boot:spring-boot-starter-webmvc"
     implementation "org.springframework.boot:spring-boot-starter-actuator"
     implementation "org.springframework.boot:spring-boot-starter-data-jpa"

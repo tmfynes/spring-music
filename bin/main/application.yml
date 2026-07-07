@@ -16,6 +16,10 @@ management:
       probes:
         # TODO [Advisor]: Liveness and readiness probes are now enabled by default in Spring Boot 4.0. If you do not need those probes, keep this property. Otherwise, delete this property to adopt the new defaults. See https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#liveness-and-readiness-probes
         enabled: false
+tanzu:
+  governance:
+    fips:
+      exit-on-failure: false
 
 ---
 spring:
@@ -35,6 +39,14 @@ management:
       probes:
         # TODO [Advisor]: Liveness and readiness probes are now enabled by default in Spring Boot 4.0. If you do not need those probes, keep this property. Otherwise, delete this property to adopt the new defaults. See https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#liveness-and-readiness-probes
         enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: governance
+tanzu:
+  governance:
+    fips:
+      exit-on-failure: false
 
 ---
 spring:
@@ -59,6 +71,14 @@ management:
       probes:
         # TODO [Advisor]: Liveness and readiness probes are now enabled by default in Spring Boot 4.0. If you do not need those probes, keep this property. Otherwise, delete this property to adopt the new defaults. See https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#liveness-and-readiness-probes
         enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: governance
+tanzu:
+  governance:
+    fips:
+      exit-on-failure: false
 
 ---
 spring:
@@ -84,3 +104,11 @@ management:
       probes:
         # TODO [Advisor]: Liveness and readiness probes are now enabled by default in Spring Boot 4.0. If you do not need those probes, keep this property. Otherwise, delete this property to adopt the new defaults. See https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#liveness-and-readiness-probes
         enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: governance
+tanzu:
+  governance:
+    fips:
+      exit-on-failure: false
