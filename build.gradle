@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '3.5.16'
+    id 'org.springframework.boot' version '4.0.7'
     id 'io.spring.dependency-management' version '1.1.6'
     id 'java'
     id 'eclipse-wtp'
@@ -28,7 +28,7 @@ ext {
 dependencies {
     //implementation "com.vmware.tanzu.spring:tanzu-spring-starter"
     // Spring Boot
-    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-webmvc"
     implementation "org.springframework.boot:spring-boot-starter-actuator"
     implementation "org.springframework.boot:spring-boot-starter-data-jpa"
     implementation "org.springframework.boot:spring-boot-starter-data-mongodb"
@@ -36,9 +36,14 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-validation"
 
     // Java CfEnv
-    implementation "io.pivotal.cfenv:java-cfenv-boot:3.5.1"
+    implementation "io.pivotal.cfenv:java-cfenv-boot:4.0.0"
 
     // JPA Persistence
+    implementation "org.springframework.boot:spring-boot-data-mongodb:4.0.7"
+    implementation "org.springframework.boot:spring-boot-data-redis:4.0.7"
+    implementation "org.springframework.boot:spring-boot-jackson2:4.0.7"
+    implementation "org.springframework.boot:spring-boot-jdbc:4.0.7"
+    implementation "org.springframework.boot:spring-boot-mongodb:4.0.7"
     runtimeOnly "org.apache.commons:commons-pool2"
     runtimeOnly "com.h2database:h2"
     runtimeOnly "com.mysql:mysql-connector-j"

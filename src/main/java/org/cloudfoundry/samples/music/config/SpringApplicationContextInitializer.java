@@ -4,12 +4,12 @@ import io.pivotal.cfenv.core.CfEnv;
 import io.pivotal.cfenv.core.CfService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
-import org.springframework.boot.autoconfigure.data.mongo.MongoRepositoriesAutoConfiguration;
-import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
-import org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
+import org.springframework.boot.data.mongodb.autoconfigure.DataMongoAutoConfiguration;
+import org.springframework.boot.data.mongodb.autoconfigure.DataMongoRepositoriesAutoConfiguration;
+import org.springframework.boot.data.redis.autoconfigure.DataRedisAutoConfiguration;
+import org.springframework.boot.data.redis.autoconfigure.DataRedisRepositoriesAutoConfiguration;
+import org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration;
+import org.springframework.boot.mongodb.autoconfigure.MongoAutoConfiguration;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -130,15 +130,15 @@ public class SpringApplicationContextInitializer implements ApplicationContextIn
     private void excludeMongoAutoConfiguration(List<String> exclude) {
         exclude.addAll(Arrays.asList(
                 MongoAutoConfiguration.class.getName(),
-                MongoDataAutoConfiguration.class.getName(),
-                MongoRepositoriesAutoConfiguration.class.getName()
+                DataMongoAutoConfiguration.class.getName(),
+                DataMongoRepositoriesAutoConfiguration.class.getName()
         ));
     }
 
     private void excludeRedisAutoConfiguration(List<String> exclude) {
         exclude.addAll(Arrays.asList(
-                RedisAutoConfiguration.class.getName(),
-                RedisRepositoriesAutoConfiguration.class.getName()
+                DataRedisAutoConfiguration.class.getName(),
+                DataRedisRepositoriesAutoConfiguration.class.getName()
         ));
     }
 }
