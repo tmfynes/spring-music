@@ -26,6 +26,7 @@ ext {
 }
 
 dependencies {
+    implementation "com.vmware.tanzu.spring:tanzu-spring-starter"
     // Spring Boot
     implementation "org.springframework.boot:spring-boot-starter-web"
     implementation "org.springframework.boot:spring-boot-starter-actuator"
