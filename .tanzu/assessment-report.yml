@@ -1,0 +1,259 @@
+java-gradle-config:
+  - file-path: "build.gradle"
+    line-number: 1
+    recommendation: "Usage of Gradle for build and dependency management"
+java-logging-import:
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 5
+    recommendation: "Consider changing to an implementation of SLF4J i.e. Logback"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 6
+    recommendation: "Consider changing to an implementation of SLF4J i.e. Logback"
+java-process-exit:
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 20
+    recommendation: "Calling these methods within a container will terminate the container."
+java-redis-cache-package:
+  - file-path: "build.gradle"
+    line-number: 29
+    recommendation: "Usage of Redis"
+java-slf4j-import:
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 4
+    recommendation: "Review logging configuration and remove file appenders. Logs\
+      \ should be written to the console"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 5
+    recommendation: "Review logging configuration and remove file appenders. Logs\
+      \ should be written to the console"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 6
+    recommendation: "Review logging configuration and remove file appenders. Logs\
+      \ should be written to the console"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 7
+    recommendation: "Review logging configuration and remove file appenders. Logs\
+      \ should be written to the console"
+java-springboot-annotations:
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/Application.java"
+    line-number: 8
+    recommendation: "Spring Boot Application"
+java-springboot-controllers:
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 12
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 13
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 23
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 28
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 34
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 40
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 46
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 11
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 12
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 17
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 23
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 31
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 19
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 31
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 42
+    recommendation: "Spring Rest Controller APIs"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 47
+    recommendation: "Spring Rest Controller APIs"
+java-springframework:
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/Application.java"
+    line-number: 5
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/Application.java"
+    line-number: 6
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 7
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 8
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 9
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 10
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 11
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 12
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 13
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 14
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 15
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 16
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 17
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 18
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/SpringApplicationContextInitializer.java"
+    line-number: 19
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 4
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 5
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 6
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 7
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 8
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 9
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 10
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/config/data/RedisConfig.java"
+    line-number: 11
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/AlbumRepositoryPopulator.java"
+    line-number: 6
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/AlbumRepositoryPopulator.java"
+    line-number: 7
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/AlbumRepositoryPopulator.java"
+    line-number: 8
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/AlbumRepositoryPopulator.java"
+    line-number: 9
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/AlbumRepositoryPopulator.java"
+    line-number: 10
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/AlbumRepositoryPopulator.java"
+    line-number: 11
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/AlbumRepositoryPopulator.java"
+    line-number: 12
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/mongodb/MongoAlbumRepository.java"
+    line-number: 4
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/mongodb/MongoAlbumRepository.java"
+    line-number: 5
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/mongodb/MongoAlbumRepository.java"
+    line-number: 6
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/redis/RedisAlbumRepository.java"
+    line-number: 6
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/redis/RedisAlbumRepository.java"
+    line-number: 7
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/redis/RedisAlbumRepository.java"
+    line-number: 8
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/redis/RedisAlbumRepository.java"
+    line-number: 9
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/redis/RedisAlbumRepository.java"
+    line-number: 10
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/jpa/JpaAlbumRepository.java"
+    line-number: 4
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/jpa/JpaAlbumRepository.java"
+    line-number: 5
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/repositories/jpa/JpaAlbumRepository.java"
+    line-number: 6
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 6
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 7
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/AlbumController.java"
+    line-number: 8
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 8
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/ErrorController.java"
+    line-number: 9
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 11
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 12
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 13
+    recommendation: "Usage of Spring Framework"
+  - file-path: "src/main/java/org/cloudfoundry/samples/music/web/InfoController.java"
+    line-number: 14
+    recommendation: "Usage of Spring Framework"
+java-sql-mssql-dependencies:
+  - file-path: "build.gradle"
+    line-number: 40
+    recommendation: "Usage of MSSQL"
+java-sql-mysql-dependencies:
+  - file-path: "build.gradle"
+    line-number: 38
+    recommendation: "Usage of MySQL"
+java-sql-postgres-configuration:
+  - file-path: "src/main/resources/application.yml"
+    line-number: 45
+    recommendation: "Usage of Postgres"
+  - file-path: "src/main/resources/application.yml"
+    line-number: 46
+    recommendation: "Usage of Postgres"
+java-sql-postgres-dependencies:
+  - file-path: "build.gradle"
+    line-number: 39
+    recommendation: "Usage of Postgres"
